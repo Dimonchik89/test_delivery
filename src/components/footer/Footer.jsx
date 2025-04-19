@@ -5,7 +5,8 @@ import { v4 as uuidv4 } from 'uuid';
 import FooterNavList from './FooterNavList';
 import FooterFeedbackHeader from './FooterFeedbackHeader';
 import FooterFeedbackBottom from './FooterFeedbackBottom';
-import { footerNavigation } from '../../constants/footerContants';
+import { footerNavigation, footerSocial } from '../../constants/footerContants';
+import FooterSocialList from './FooterSocialList';
 
 import '../../styles/footer.css';
 
@@ -29,7 +30,13 @@ const Footer = () => {
 					</div>
 				</div>
 
-				<div className="footer-bottom"></div>
+				<div className="footer-bottom">
+					<span className="footer-copyright">2024 @ Sprinters. All rights reserved.</span>
+
+					<div className="footer-bottom__social">
+						<FooterSocialList footerSocial={footerSocial} />
+					</div>
+				</div>
 			</Container>
 		</div>
 	);

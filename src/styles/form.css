@@ -31,3 +31,9 @@
 .form-button {
 	height: 5rem;
 }
+
+@media (max-width: 480px) {
+	.form {
+		flex-direction: column;
+	}
+}
