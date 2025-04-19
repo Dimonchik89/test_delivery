@@ -20,8 +20,8 @@ const Form = () => {
 				setTimeout(() => {
 					alert(JSON.stringify(values, null, 2));
 					setSubmitting(false);
+					values.email = '';
 				}, 400);
-				values.email = '';
 			}}
 		>
 			{({ values, errors, touched, handleChange, handleBlur, handleSubmit, isSubmitting }) => (
