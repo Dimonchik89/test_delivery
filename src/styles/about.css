@@ -71,7 +71,11 @@
 }
 
 .about-bottom__item {
+}
+
+.about-bottom__item-wrapper {
 	gap: 1.4rem;
+	align-items: center;
 }
 
 .about-bottom__subtitle {
@@ -116,7 +120,21 @@
 		justify-content: center;
 	}
 
+	.about-bottom__item-wrapper {
+		width: 26rem;
+		justify-content: start;
+		align-items: flex-start;
+	}
+
+	.about-bottom__item-info {
+		flex: 1 0 auto;
+	}
+
 	.about-bottom__title {
+		text-align: center;
+	}
+
+	.about-bottom__subtitle {
 		text-align: center;
 	}
 }
