@@ -1,0 +1,54 @@
+.service {
+	margin: 7.2rem 0 7.5rem;
+}
+
+.service-wrapper {
+	gap: 2.4rem;
+}
+
+.service-header {
+	gap: 0.8rem;
+}
+
+.service-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+.service-item {
+	gap: 1.2rem;
+}
+
+.service-title {
+	font: 800 2.4rem / 1.2 var(--second-family);
+	color: var(--neutrals-100);
+	max-width: 14.3rem;
+}
+
+@media (max-width: 1024px) {
+	.service-header span {
+		text-align: center;
+	}
+}
+
+@media (max-width: 768px) {
+	.service {
+		margin: 4rem 0;
+	}
+
+	.service-list {
+		gap: 2rem;
+	}
+
+	.service-item {
+		width: 100%;
+	}
+
+	.service-title {
+		max-width: 80%;
+	}
+}

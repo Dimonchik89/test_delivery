@@ -1,0 +1,38 @@
+.header-mobile {
+	position: absolute;
+	top: 8rem;
+	right: 0;
+	width: 30rem;
+	height: calc(100vh - 8rem);
+	background-color: var(--neutrals-80);
+	display: none;
+	padding: 2rem 1.5rem;
+}
+
+.header-mobile__link {
+	font: 600 1.6rem / 1.6 var(--font-family);
+	color: var(--neutrals-0);
+	cursor: pointer;
+}
+
+.header-mobile__link._active {
+	color: var(--brands-primary);
+	transition: all 0.3s ease-in-out;
+}
+
+.header-mobile__content {
+	flex: 1 0 auto;
+}
+
+@media (max-width: 1024px) {
+	.header-mobile {
+		display: flex;
+		flex-direction: column;
+		transform: translateX(100%);
+		transition: all 0.5s ease-in-out;
+	}
+
+	.header-mobile._active {
+		transform: translateX(0);
+	}
+}

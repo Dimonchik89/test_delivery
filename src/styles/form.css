@@ -1,0 +1,33 @@
+.form {
+	gap: 0.8rem;
+	width: 100%;
+}
+
+.form-input__wrapper {
+	flex: 1 0 auto;
+	gap: 0.5rem;
+}
+
+.form-input {
+	border: 1px solid #d6ddeb;
+	padding: 1.2rem 1.6rem;
+	height: 5rem;
+	background: var(--neutrals-0);
+	font: 400 1.6rem / 1.6 var(--font-family);
+	color: var(--neutrals-80);
+}
+
+.form-input::placeholder {
+	font: 400 1.6rem / 1.6 var(--font-family);
+	color: var(--neutrals-40);
+}
+
+.form-error {
+	font: 400 1.6rem / 1.6 var(--font-family);
+	color: var(--accents-red);
+	text-align: center;
+}
+
+.form-button {
+	height: 5rem;
+}

@@ -1,0 +1,23 @@
+.breadcrumbs-list {
+	display: flex;
+	gap: 0.3rem;
+}
+
+.breadcrumbs-link {
+	font: 400 1.6rem / 1.6 var(--font-family);
+	color: var(--neutrals-60);
+	cursor: pointer;
+}
+
+.breadcrumbs-link:after {
+	content: '/';
+	margin-left: 0.3rem;
+}
+
+.breadcrumbs-link._active {
+	color: var(--neutrals-100);
+}
+
+.breadcrumbs-link._active:after {
+	content: '';
+}

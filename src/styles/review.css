@@ -1,0 +1,58 @@
+.review {
+	clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+	background-color: var(--neutrals-10i);
+	position: relative;
+	padding: 7.5rem 0 4.5rem;
+}
+
+.review-bg {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.review-wrapper {
+	display: flex;
+	align-items: start;
+	gap: 3.2rem;
+}
+
+.review-left {
+	display: flex;
+	flex-direction: column;
+	gap: 2.2rem;
+	margin-bottom: 4.2rem;
+}
+
+.review-title {
+	font: 800 4.8rem / 1.1 var(--second-family);
+	color: var(--neutrals-100);
+}
+
+.review-title__blue {
+	color: var(--accents-blue);
+}
+
+.review-content {
+	flex: 0 0 38%;
+}
+
+.review-slider {
+	max-width: 62%;
+}
+
+@media (max-width: 1024px) {
+	.review-wrapper {
+		flex-direction: column;
+	}
+
+	.review-slider {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+	.review-bg {
+		display: none;
+	}
+}

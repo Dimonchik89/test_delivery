@@ -1,0 +1,130 @@
+.about {
+	background-color: var(--neutrals-10i);
+	padding: 4rem 0 7.2rem;
+	background-image: url('/header.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+}
+
+.about-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 4rem;
+}
+
+.about-container {
+	display: flex;
+	gap: 3.2rem;
+	padding: 1.1rem 0;
+}
+
+.about-content {
+	flex: 1 1 auto;
+}
+
+.about-container__img {
+	width: 17.1rem;
+	height: 17.1rem;
+}
+
+.about-top {
+	gap: 1.2rem;
+	margin-bottom: 1.2rem;
+}
+
+.about-title {
+	font: 800 4.8rem / 1.1 var(--second-family);
+	color: var(--neutrals-100);
+}
+
+.about-count {
+	border: 1px solid #4640de;
+	padding: 4px 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font: 400 1.6rem / 1.6 var(--font-family);
+	text-align: center;
+	color: var(--brands-primary);
+}
+
+.about-center {
+	gap: 3.2rem;
+	margin-bottom: 2.4rem;
+}
+
+.about-link {
+	font: 600 1.6rem / 1.6 var(--font-family);
+	color: var(--brands-primary) !important;
+	gap: 0.4rem;
+}
+
+.about-bottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 3.2rem;
+}
+
+.about-bottom__item {
+	gap: 1.4rem;
+}
+
+.about-bottom__subtitle {
+	font: 400 1.6rem / 1.6 var(--font-family);
+	color: var(--neutrals-80);
+}
+
+.about-bottom__title {
+	font: 600 1.6rem / 1.6 var(--font-family);
+	color: var(--neutrals-100);
+}
+
+@media (max-width: 768px) {
+	.about {
+		padding: 4rem 0 4rem;
+	}
+
+	.about-title {
+		font: 800 3.8rem / 1.1 var(--second-family);
+	}
+
+	.about-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.about-top {
+		justify-content: center;
+	}
+
+	.about-center {
+		justify-content: center;
+	}
+
+	.about-bottom {
+		justify-content: center;
+		gap: 1.8rem;
+	}
+
+	.about-bottom__item {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.about-bottom__title {
+		text-align: center;
+	}
+}
+
+@media (max-width: 480px) {
+	.about-center {
+		flex-direction: column;
+		align-items: center;
+		gap: 1.6rem;
+	}
+}
